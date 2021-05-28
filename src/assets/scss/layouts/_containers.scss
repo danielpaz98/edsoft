@@ -1,0 +1,12 @@
+.container {
+	width: 100%;
+	max-width: var(--max-width);
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.container-fluid {
+  display         : flex;
+  flex-direction  : column;
+  min-height      : 100vh;
+}

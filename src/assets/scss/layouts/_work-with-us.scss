@@ -1,0 +1,20 @@
+.work-with-us-info {
+	text-align: center;
+}
+
+.social-networks {
+	text-align: center;
+
+	& a:not(:last-of-type) {
+		margin-right: 2rem;
+	}
+
+	& .jam {
+		font-size: 1rem;
+		color: var(--text-color);
+
+		&:hover {
+			color: var(--primary-color);
+		}
+	}
+}

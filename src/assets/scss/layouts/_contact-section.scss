@@ -1,0 +1,25 @@
+.contact-section {
+	margin-top: var(--block-spacing);
+
+	&-title {
+		text-align: center;
+		margin-bottom: var(--block-spacing);
+	}
+
+	& .container {
+		display      : flex;
+		justify-content: center;
+		gap          : 4rem;
+		margin-bottom: var(--block-spacing);
+		flex-wrap: wrap;
+	}
+}
+
+.contact-section-info {
+	order: 2;
+}
+
+.contact-item .social-networks {
+	margin: 0;
+	text-align: left;
+}

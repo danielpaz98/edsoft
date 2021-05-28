@@ -1,0 +1,15 @@
+.last-projects {
+	text-align: center;
+
+	&-title {
+		margin-bottom: var(--block-spacing);
+	}
+
+	& .container {
+		display      : flex;
+		justify-content: center;
+		gap          : 4rem;
+		margin-bottom: var(--block-spacing);
+		flex-wrap: wrap;
+	}
+}

@@ -1,0 +1,34 @@
+.about-us {
+	text-align: center;
+	margin-top: var(--block-spacing);
+
+	&-title {
+		margin-bottom: var(--block-spacing);
+	}
+
+	& .container {
+		display: grid;
+		gap: var(--block-spacing);
+		--max-width: 800px;
+	}
+}
+
+.about-item {
+	display: grid;
+	align-items: center;
+
+	.about-item-info {
+		order: -1;
+	}
+	
+	@include media-query(large) {
+		gap: 2rem;
+		text-align: left;
+		grid-template-columns: repeat(2, 1fr);
+
+		&:nth-child(odd) .about-item-info {
+			order: 2;
+		}
+	}
+	
+}

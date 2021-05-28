@@ -1,0 +1,16 @@
+.projects-section {
+	text-align: center;
+	margin-top: var(--block-spacing);
+
+	&-title {
+		margin-bottom: var(--block-spacing);
+	}
+
+	& .container {
+		display      : flex;
+		justify-content: center;
+		gap          : 4rem;
+		margin-bottom: var(--block-spacing);
+		flex-wrap: wrap;
+	}
+}
