@@ -1,0 +1,45 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+body {
+	font-family     : var(--body-font);
+	color           : var(--text-color);
+	font-size: var(--base-font-size);
+	background-color: var(--body-bg-color);
+	line-height     : var(--body-line-height);
+}
+
+img {
+	max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+	color          : var(--primary-color);
+}
+
+@for $i from 1 through 6 {
+	h#{$i} {
+		font-weight: 800;
+		font-family: var(--title-font);
+		line-height: var(--title-line-height);
+		color:  var(--title-color);
+	}
+}
+
+h1 {
+	font-size: var(--h1-font-size);
+}
+
+h2 {
+	font-size: var(--h2-font-size);
+}
+
+h3 {
+	font-size: var(--h3-font-size);
+}
+
+h4 {
+	font-size: var(--h4-font-size);
+}
