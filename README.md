@@ -1,7 +1,5 @@
 # edsoft
 
-Proyecto realizado del workshop: Mi primera página web de EDteam
-
 ## Build Setup
 
 ```bash
