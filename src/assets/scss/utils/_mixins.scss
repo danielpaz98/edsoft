@@ -1,0 +1,27 @@
+@mixin media-query($breakpoint, $rule: min-width) {
+	@if map-has-key($breakpoints, $breakpoint) {
+		@media screen and ($rule: map-get($breakpoints, $breakpoint)) {
+			@content;
+		}
+	} @else if(type-of($breakpoint) == "number" and unit($breakpoint) != "") {
+		@media screen and ($rule: $breakpoint) {
+			@content;
+		}
+	}
+}
+
+@mixin aspect-ratio-img($widthR, $heightR){
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-bottom: percentage($heightR / $widthR);
+
+	& img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}

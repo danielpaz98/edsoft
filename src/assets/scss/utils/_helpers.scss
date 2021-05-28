@@ -1,0 +1,19 @@
+.section-spacing {
+	margin-bottom: var(--section-spacing);
+}
+
+.image-container {
+	@include aspect-ratio-img(16, 9);
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-sm {
+	font-size: var(--small-font-size);
+}
+
+.text-xsm {
+	font-size: var(--smaller-font-size);
+}
