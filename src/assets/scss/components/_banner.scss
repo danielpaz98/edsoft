@@ -1,0 +1,39 @@
+.main-banner {
+	background-color: var(--primary-color);
+	padding: var(--block-spacing);
+	text-align: center;
+
+	& .container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+
+		@include media-query(large) {
+			flex-wrap: nowrap;
+		}
+	}
+
+	&-img {
+		width: 80%;
+	}
+}
+
+.main-banner-info {
+	text-align: center;
+
+	@include media-query(large) {
+		text-align: left;
+	}
+
+	&-title {
+		margin-bottom: 1rem;
+		color: var(--white-color);
+	}
+
+	&-subtitle {
+		font-size: var(--big-font-size);
+		color: var(--white-color);
+		opacity: .6;
+	}
+}

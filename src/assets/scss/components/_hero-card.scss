@@ -1,0 +1,59 @@
+.hero-card {
+	min-width: 300px;
+	margin-bottom: var(--block-spacing);
+	border-radius: .5rem;
+	@include aspect-ratio-img(16, 9);
+
+	&:hover {
+		color: var(--white-color);
+		background-color: var(--primary-color);
+	}
+
+	&:hover &-img {
+		opacity: .1;
+	}
+
+	&:hover &-info {
+		opacity: 1;
+	}
+
+	&-img {
+		transition: opacity .25s;
+	}
+
+	&::before {
+		content         : "";
+		position        : absolute;
+		bottom          : -.5rem;
+		left            : 50%;
+		transform       : translateX(-50%);
+		display         : block;
+		width           : 90%;
+		height          : 1rem;
+		background-color: grey;
+		filter          : blur(4px) opacity(.3);
+		border-radius   : 100%;
+		z-index         : -1;
+	}
+}
+
+.hero-card-info {
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: var(--z-front);
+	transition: .25s;
+	text-align: center;
+
+	&-title {
+		margin: 0;
+		color: var(--white-color);
+	}
+
+	&-text {
+		font-size: var(--small-font-size);
+		opacity: .6;
+	}
+}

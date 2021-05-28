@@ -1,0 +1,32 @@
+.main-header {
+	position: sticky;
+	top: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: var(--header-height);
+	background-color: var(--header-bg-color);
+	box-shadow: 0 4px 4px hsla(0, 0, 0, .06);
+	z-index: var(--z-fixed);
+	padding: 0 2rem;
+
+	a {
+		margin-right: auto;
+	}
+
+	&-logo {
+		filter: drop-shadow(0 0 1px black);
+		height: 1.5rem;
+		outline: none;
+		
+		@include media-query(large) {
+			height: 2rem;
+		}
+	}
+
+	& .container {
+		display: flex;
+		align-items: center;
+	}
+}
